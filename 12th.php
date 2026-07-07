@@ -1,57 +1,20 @@
 <?php
 
-// Associative array
-$arr1 = array("Name"=>"Dishank", "City"=>"Rajkot");
+$inputString = "Hello World! Welcome to PHP.";
 
-echo "<h3>1. array_change_key_case()</h3>";
-print_r(array_change_key_case($arr1, CASE_LOWER));
-echo "<br>";
-print_r(array_change_key_case($arr1, CASE_UPPER));
+echo "<h3>Original String: '$inputString'</h3>";
+
+echo "<b>1) strlen():</b> Length of string is: " . strlen($inputString) . "<br>";
 
 
-// Months array
-$months = array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug");
-
-echo "<h3>2. array_chunk()</h3>";
-print_r(array_chunk($months, 3));
+echo "<b>2) strpos():</b> Position of 'Welcome' is: " . strpos($inputString, "Welcome") . "<br>";
 
 
-// Count values array
-$arr2 = array("Apple","Banana","Apple","Mango","Banana","Apple");
+echo "<b>3) str_word_count():</b> Word count is: " . str_word_count($inputString) . "<br>";
 
-echo "<h3>3. array_count_values()</h3>";
-print_r(array_count_values($arr2));
+echo "<b>4) strrev():</b> Reversed string: " . strrev($inputString) . "<br>";
 
+echo "<b>5) strtolower():</b> Lowercase: " . strtolower($inputString) . "<br>";
 
-// array_pop()
-$arr3 = array("Red","Green","Blue");
-
-echo "<h3>4. array_pop()</h3>";
-array_pop($arr3);
-print_r($arr3);
-
-
-// array_push()
-$arr4 = array("Red","Green");
-
-echo "<h3>5. array_push()</h3>";
-array_push($arr4, "Blue", "Yellow");
-print_r($arr4);
-
-
-// array_unshift()
-$arr5 = array("Green","Blue");
-
-echo "<h3>6. array_unshift()</h3>";
-array_unshift($arr5, "Red");
-print_r($arr5);
-
-
-// array_shift()
-$arr6 = array("Red","Green","Blue");
-
-echo "<h3>7. array_shift()</h3>";
-array_shift($arr6);
-print_r($arr6);
-
+echo "<b>6) strtoupper():</b> Uppercase: " . strtoupper($inputString) . "<br>";
 ?>
