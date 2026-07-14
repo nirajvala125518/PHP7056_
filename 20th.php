@@ -13,16 +13,16 @@ input{width:200px; padding:5px; margin:5px;}
 
     <form method="post" enctype="multipart/form-data">
 
-        Product ID :
+        Product ID<br>
         <input type="text" name="product_id" required><br>
 
-        Product Name :
+        Product Name<br>
         <input type="text" name="name" required><br>
 
-        Price :
+        Price<br>
         <input type="number" step="0.01" name="price" required><br>
 
-        Quantity :
+        Quantity<br>
         <input type="number" name="quantity" required><br>
 
         Type<br>
